@@ -1,0 +1,42 @@
+pipelines:
+  tags:
+    "**":
+      - step:
+          size: 2x
+          image: mingc/android-build-box
+          script:
+            - apt-get update -y
+            - apt-get install -y ssh
+            - . $HOME/.bash_profile
+
+
+            - apt-get install tree python3 python3-pip -y
+            - echo $BITBUCKET_PR_ID
+            - echo $BITBUCKET_STEP_TRIGGERER_UUID
+            - echo $BITBUCKET_BRANCH
+            - echo $BITBUCKET_TAG
+            - echo $BUILD_RECEIVERS
+            - echo $BITBUCKET_WORKSPACE
+            - echo $BITBUCKET_REPO_SLUG
+
+            - jenv versions
+            - jenv local openjdk64-11.0.17
+            - javac -version
+            - apt-get install tree python3 python3-pip -y
+
+            - chmod +x gradlew
+            - ./gradlew bundleRelease --stacktrace
+
+            - |
+              python3 send_apks_to_telegram_bitbucket.py  \
+                -workspace $BITBUCKET_WORKSPACE \
+                -repo_slug $BITBUCKET_REPO_SLUG \
+                -token $TELEGRAM_TOKEN  \
+                -names_ids $BUILD_RECEIVERS \
+                -pr_id "$BITBUCKET_PR_ID" \
+                -tag "$BITBUCKET_TAG" \
+                -branch "$BITBUCKET_BRANCH" \
+                -app_login $SECRET_LOGIN \
+                -app_password $SECRET_PASSWORD
+
+

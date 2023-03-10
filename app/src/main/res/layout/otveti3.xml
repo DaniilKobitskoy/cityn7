@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".otveti3">
+
+
+    <TextView
+        android:gravity="center"
+
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="33dp"
+        android:text="What is the only country \nthat has taken part in \nevery FIFA World Cup?"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:gravity="center"
+
+        android:id="@+id/cifilis_4"
+        android:layout_width="187dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Portugal"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:gravity="center"
+
+        android:id="@+id/sifac"
+        android:layout_width="187dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Argentina"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cifilis_4" />
+
+    <Button
+        android:gravity="center"
+
+        android:id="@+id/xyi"
+        android:layout_width="187dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Spain"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifac" />
+
+    <Button
+        android:gravity="center"
+
+        android:id="@+id/chlen"
+        android:layout_width="187dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Brazil"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xyi" />
+
+    <Button
+        android:gravity="center"
+android:textSize="24sp"
+        android:id="@+id/b_7"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Next question"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chlen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Question 3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/i_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

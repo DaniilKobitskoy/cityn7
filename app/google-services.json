@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36891773257",
+    "project_id": "win-65b8c",
+    "storage_bucket": "win-65b8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36891773257:android:f09dfca3a7ca03368c3298",
+        "android_client_info": {
+          "package_name": "app1.win.app1.win.sport1.win1.win.india1.xbet.win"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36891773257-kb74u7haqkkevgtsagato1l9vkeghsub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdZi3C76ESSwc71W-QIcXSNoIPVZrxvXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36891773257-kb74u7haqkkevgtsagato1l9vkeghsub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
